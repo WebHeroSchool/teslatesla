@@ -64,7 +64,7 @@ body {
 }
 
 .header__model-nav {
-  margin-right: 212px;
+  margin-right: 200px;
 }
 
 .header__logo-img {
@@ -137,3 +137,58 @@ body {
   font-weight: 600;
 }
 
+.hero__heading {
+  font-size: 90px;
+  line-height: 110px;
+  font-weight: 600px;
+}
+
+.hero__slogan {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.hero__stats-main {
+  font-size: 35px;
+  line-height: 43px;
+  font-weight: 600;
+}
+
+.hero__stats-min {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.hero__stats-sub {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+}
+
+.action__info {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.action__button {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  border: 2px solid #fff;
+}
+
+.hero__testdrive-button {
+  color: #E51937;
+  border: 2px solid #E51937;
+  padding-top: 11px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 5px;
+}
