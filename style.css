@@ -56,15 +56,24 @@ body {
   margin-top: 24px;
   margin-bottom: 58px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
-.header__logo {
-  margin-right: 271px;
+@media (max-width: 1080px) {
+  .header__navigation-wrapper {
+  display: flex;
+  flex-direction: column;
+  }
 }
 
 .header__model-nav {
-  margin-right: 200px;
+  margin-left: 56px;
+}
+
+@media (max-width: 1080px) {
+  .header__model-nav {
+  margin-left: 0;
+  }
 }
 
 .header__logo-img {
