@@ -2,35 +2,202 @@
   font-family: "Montserrat";
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), 
-       url("../fonts/montserrat-regular-webfont.woff") format("woff");
+  src: url("./fonts/montserrat-regular-webfont.woff2") format("woff2"), 
+       url("./fonts/montserrat-regular-webfont.woff") format("woff");
 }
 
 @font-face {
   font-family: "Montserrat";
   font-weight: 500;
   font-style: normal;
-  src: url("../fonts/montserrat-medium-webfont.woff2") format("woff2"), 
-       url("../fonts/montserrat-medium-webfont.woff") format("woff");
+  src: url("./fonts/montserrat-medium-webfont.woff2") format("woff2"), 
+       url("./fonts/montserrat-medium-webfont.woff") format("woff");
 }
 
 @font-face {
   font-family: "Montserrat";
   font-weight: 600;
   font-style: normal;
-  src: url("../fonts/montserrat-semibold-webfont.woff2") format("woff2"), 
-       url("../fonts/montserrat-semibold-webfont.woff") format("woff");
+  src: url("./fonts/montserrat-semibold-webfont.woff2") format("woff2"), 
+       url("./fonts/montserrat-semibold-webfont.woff") format("woff");
 }
 
 @font-face {
   font-family: "Montserrat";
   font-weight: 700;
   font-style: normal;
-  src: url("../fonts/montserrat-bold-webfont.woff2.woff2") format("woff2"), 
-       url("../fonts/montserrat-bold-webfont.woff2.woff") format("woff");
+  src: url("./fonts/montserrat-bold-webfont.woff2") format("woff2"), 
+       url("./fonts/montserrat-bold-webfont.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
   font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.4rem;
   font-weight: 600;
+  padding: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 50px;
+}
+
+.header__navigation-wrapper {
+  margin-top: 24px;
+  margin-bottom: 58px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1080px) {
+  .header__navigation-wrapper {
+  display: flex;
+  flex-direction: column;
+  }
+}
+
+.header__model-nav {
+  margin-left: 56px;
+}
+
+@media (max-width: 1080px) {
+  .header__model-nav {
+  margin-left: 0;
+  }
+}
+
+.header__logo-img {
+  display: block;
+  width: 166px;
+  height: 51px;
+}
+
+.header__user-btn {
+  width: 24px;
+  height: 15px;
+  background-image: url(./img/hamburger-button.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__model-link,
+.header__user-link {
+  padding: 16px 0;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.header__model-link:hover,
+.header__user-link:hover {
+  color: #E51937;
+  cursor: pointer;
+}
+
+.header__model-link:hover::after,
+.header__user-link:hover::after {
+  display: block;
+}
+
+.header__model-link::after,
+.header__user-link::after {
+  content: "";
+  height: 2px;
+  width: 60px;
+  bottom: 8px;
+  display: none;
+  background-image: url("./img/link-bottom-border.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.header__model-link {
+  font-size: 15px;
+  line-height: 18px;
+  margin-right: 41px;
+  font-weight: 600;
+}
+
+.header__model-link:last-child {
+  margin-right: 0;
+}
+
+.header__user-link {
+  font-size: 15px;
+  line-height: 18px;
+  margin-right: 30px;
+  font-weight: 600;
+}
+
+.hero__heading {
+  font-size: 90px;
+  line-height: 110px;
+  font-weight: 600px;
+}
+
+.hero__slogan {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.hero__stats-main {
+  font-size: 35px;
+  line-height: 43px;
+  font-weight: 600;
+}
+
+.hero__stats-min {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.hero__stats-sub {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+}
+
+.action__info {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.action__button {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  border: 2px solid #fff;
+}
+
+.hero__testdrive-button {
+  color: #E51937;
+  border: 2px solid #E51937;
+  padding-top: 11px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 5px;
 }
