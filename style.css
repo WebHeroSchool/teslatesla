@@ -1,35 +1,3 @@
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 400;
-  font-style: normal;
-  src: url("./fonts/montserrat-regular-webfont.woff2") format("woff2"), 
-       url("./fonts/montserrat-regular-webfont.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 500;
-  font-style: normal;
-  src: url("./fonts/montserrat-medium-webfont.woff2") format("woff2"), 
-       url("./fonts/montserrat-medium-webfont.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-style: normal;
-  src: url("./fonts/montserrat-semibold-webfont.woff2") format("woff2"), 
-       url("./fonts/montserrat-semibold-webfont.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-style: normal;
-  src: url("./fonts/montserrat-bold-webfont.woff2") format("woff2"), 
-       url("./fonts/montserrat-bold-webfont.woff") format("woff");
-}
-
 html {
   box-sizing: border-box;
   font-size: 10px;
@@ -44,36 +12,25 @@ body {
   font-size: 1.4rem;
   font-weight: 600;
   padding: 0;
-  max-width: 1440px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .container {
-  margin: 0 50px;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
-.header__navigation-wrapper {
+.header__nav {
+  max-width: 1341px;
   margin-top: 24px;
   margin-bottom: 58px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-@media (max-width: 1080px) {
-  .header__navigation-wrapper {
-  display: flex;
-  flex-direction: column;
-  }
-}
-
-.header__model-nav {
-  margin-left: 56px;
-}
-
-@media (max-width: 1080px) {
-  .header__model-nav {
-  margin-left: 0;
-  }
+.header__model {
+  margin-left: 55px;
 }
 
 .header__logo-img {
@@ -100,6 +57,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   position: relative;
+  flex-shrink: 0;
 }
 
 .header__model-link:hover,
@@ -128,11 +86,17 @@ body {
   transform: translate(-50%, 0);
 }
 
-.header__model-link {
+.header__model-link,
+.header__user-link {
   font-size: 15px;
   line-height: 18px;
-  margin-right: 41px;
   font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+.header__model-link {
+  margin-right: 41px;
 }
 
 .header__model-link:last-child {
@@ -140,22 +104,93 @@ body {
 }
 
 .header__user-link {
-  font-size: 15px;
-  line-height: 18px;
   margin-right: 30px;
-  font-weight: 600;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-image: url("./img/tesla-watermark.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .hero__heading {
+  margin: 0;
+  padding: 0;
+
   font-size: 90px;
   line-height: 110px;
-  font-weight: 600px;
+  font-weight: 600;
 }
 
 .hero__slogan {
+  margin: 0;
+  margin-top: -9px;
+  margin-bottom: 27px;
+  padding: 0;
+
   font-size: 15px;
   line-height: 18px;
   font-weight: 500;
+  letter-spacing: 0.07em;
+}
+
+.hero__image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.hero__text-wrapper {
+  max-width: 798px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  padding-bottom: 56px;
+  background-image: url("./img/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: 34px 24px;
+  background-position-x: 50%;
+  background-position-y: 100%;
+}
+
+.hero__stats {
+  display: flex;
+  justify-content: space-between;
+  width: 373px;
+}
+
+.hero__testdrive {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  min-height: 58px;
+}
+
+.hero__stats-speed-wrapper {
+  width: 154px;
+  padding-left: 59px;
+
+  background-image: url("./img/ico-speed.svg");
+  background-repeat: no-repeat;
+  background-size: 46px 35px;
+  background-position-y: 50%;
+}
+
+.hero__stats-km-wrapper {
+  width: 140px;
+  padding-left: 42px;
+
+  background-image: url("./img/ico-way.svg");
+  background-repeat: no-repeat;
+  background-size: 31px 50px;
+  background-position: 0px 8px;
 }
 
 .hero__stats-main {
@@ -174,30 +209,108 @@ body {
   font-size: 12px;
   line-height: 15px;
   font-weight: 400;
+  display: block;
 }
 
-.action__info {
+.hero__testdrive-text {
+  width: 118px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 13px;
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.action__button {
+.hero__testdrive-button {
+  padding: 10px 43px;
+  min-height: 40px;
+  min-width: 160px;
   font-size: 13px;
   line-height: 16px;
-  font-weight: 600;
+  font-weight: 700;
+  color: #E51937;
   text-transform: uppercase;
-  color: #fff;
   display: inline-block;
-  border: 2px solid #fff;
+  vertical-align: middle;
+  border: 2px solid #E51937;
 }
 
-.hero__testdrive-button {
-  color: #E51937;
-  border: 2px solid #E51937;
-  padding-top: 11px;
-  padding-left: 7px;
-  padding-right: 7px;
-  padding-bottom: 5px;
+@media (max-width: 1439px) {
+  .header__user-btn {
+    margin-right: 14px;
+  }
 }
+
+@media (max-width: 960px) {
+  .header__model {
+    display: none;
+  }
+  .header__user-link {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero__text-wrapper {
+    width: 303px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__nav {
+    margin-bottom: 30px;
+  }
+  .hero__slogan {
+    margin: 0;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .hero__image {
+    margin-top: 46px;
+  }
+  .header__logo-img {
+    width: 138px;
+    height: 42px;
+    margin-top: 5px;
+    margin-left: -6px;
+  }
+  .hero__stats-main {
+    font-size: 25px;
+    line-height: 28px;
+  }
+  .hero__stats-min {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .hero {
+    background-position-y: 110px;
+  }
+  .hero__heading {
+    font-size: 50px;
+    line-height: 61px;
+  }
+  .hero__stats {
+    margin-bottom: 28px;
+  }
+  .hero__stats-speed-wrapper {
+    width: 140px;
+    min-height: 53px;
+    padding-top: 5px;
+    background-size: 38px 28.7px;
+    background-position: 5px 10px;
+  }
+  .hero__stats-km-wrapper {
+    width: 115px;
+    margin-right: 19px;
+    min-height: 53px;
+    padding-top: 5px;
+    background-size: 25.29px 41px;
+    background-position: 5px 2px;
+  }
+  .hero__text-wrapper {
+    padding-bottom: 43px;
+  }
+}
+
