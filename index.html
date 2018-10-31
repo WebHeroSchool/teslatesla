@@ -8,25 +8,25 @@
     <title>About Tesla Model S</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
     <!--
-    <style>
-    /* Используем <html> как слой с макетами */
-    HTML {
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-image: url('./../Tesla-Landing.jpg');
-    min-height: 3500px;
-    }
-    @media (min-width: 500px) {
-    HTML {
-    background-image: url('./../Tesla-Landing.jpg');
-    }
-    }
-    /* Делаем слой с разметкой полупрозрачным */
-    BODY {
-    opacity: .5;
-    }
-    </style> 
-    -->
+      <style>
+      /* Используем <html> как слой с макетами */
+      HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-image: url('./../Tesla-Landing.jpg');
+      min-height: 3500px;
+      }
+      @media (min-width: 500px) {
+      HTML {
+      background-image: url('./../Tesla-Landing.jpg');
+      }
+      }
+      /* Делаем слой с разметкой полупрозрачным */
+      BODY {
+      opacity: .5;
+      }
+      </style> 
+      -->
   </head>
   <body>
     <header class="header">
@@ -48,109 +48,121 @@
       <section class="hero container">
         <h1 class="hero__heading">Model S</h1>
         <p class="hero__slogan">Добро пожаловать в будущее!</p>
-        <img class="hero__image" src="./img/tesla-car.png" width="968" height="450">
+        <img class="hero__image" src="./img/tesla-car.png" width="1440" height="594">
       </section>
       <div class="hero__text-wrapper">
-          <section class="hero__stats">
-            <div class="hero__stats-speed-wrapper">
-              <span class="hero__stats-main">2,7 <span class="hero__stats-min">сек</span></span>
-              <span class="hero__stats-sub">0-100 км/час</span>
+        <section class="hero__stats">
+          <div class="hero__stats-speed-wrapper">
+            <span class="hero__stats-main">2,7 <span class="hero__stats-min">сек</span></span>
+            <span class="hero__stats-sub">0-100 км/час</span>
+          </div>
+          <div class="hero__stats-km-wrapper">
+            <span class="hero__stats-main">632 <span class="hero__stats-min">км</span></span>
+            <span class="hero__stats-sub">запас хода</span>
+          </div>
+        </section>
+        <section class="hero__testdrive">
+          <a href="#" class="hero__testdrive-text">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="hero__testdrive-ico" d="M11 0C4.95819 0 0 4.95819 0 11C0 17.0418 4.95819 22 11 22C17.0418 22 22 17.0418 22 11C22 4.95819 17.0418 0 11 0ZM11 19.3789C6.38002 19.3789 2.62109 15.62 2.62109 11C2.62109 6.38002 6.38002 2.62109 11 2.62109C15.62 2.62109 19.3789 6.38002 19.3789 11C19.3789 15.62 15.62 19.3789 11 19.3789Z" fill="black"/>
+              <path class="hero__testdrive-ico" d="M12.2891 9.06641C12.2891 9.77841 11.712 10.3555 11 10.3555C10.288 10.3555 9.71094 9.77841 9.71094 9.06641C9.71094 8.3544 10.288 7.77734 11 7.77734C11.712 7.77734 12.2891 8.3544 12.2891 9.06641Z" fill="black"/>
+              <path class="hero__testdrive-ico" d="M11 11.6446C9.85814 11.6446 8.89873 10.8936 8.56085 9.86356C6.85503 10.0495 5.26434 10.4067 3.91402 10.926C3.91368 10.9509 3.91016 10.975 3.91016 11C3.91016 11.7449 4.02715 12.4627 4.24098 13.1377C5.29573 12.5872 6.32849 12.2891 7.13281 12.2891C7.80571 12.2891 8.32251 12.4793 8.71208 12.8714C9.61275 13.7759 9.71597 15.6118 9.71799 17.9677C10.1344 18.0442 10.5618 18.0899 11 18.0899C11.4384 18.0899 11.8658 18.0442 12.2825 17.9677C12.284 15.6136 12.3867 13.7769 13.2879 12.8714C13.6775 12.4798 14.1936 12.2891 14.8672 12.2891C15.6609 12.2891 16.6959 12.5758 17.7605 13.1335C17.9737 12.4598 18.0898 11.7434 18.0898 11C18.0898 10.9755 18.0863 10.9519 18.0862 10.9275C16.6232 10.3634 15.0045 10.0348 13.4393 9.86322C13.1014 10.8936 12.142 11.6446 11 11.6446Z" fill="black"/>
+            </svg>
+            Тест драйв
+          </a>
+          <button class="hero__testdrive-button">заказать</button>
+        </section>
+      </div>
+    </header>
+    <main class="main container">
+      <section class="spec">
+        <div class="spec__image-wrap">
+          <h2 class="main__heading">Model S</h2>
+        </div>
+        <aside class="sidebar sidebar--right">
+          <h3 class="sidebar__heading">Будущее вождения</h3>
+          <p class="sidebar__text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую с студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
+          <section class="sidebar__stats">
+            <div class="sidebar__stats-wrapper">
+              <span class="sidebar__stats-main">17</span>
+              <span class="sidebar__stats-sub-main"></span>дюймов</span>
+              <span class="sidebar__stats-sub">Большой дисплей</span>
             </div>
-            <div class="hero__stats-km-wrapper">
-              <span class="hero__stats-main">632 <span class="hero__stats-min">км</span></span>
-              <span class="hero__stats-sub">запас хода</span>
+            <div class="sidebar__stats-wrapper">
+              <span class="sidebar__stats-sub-main">Беспроводное обновление ПО</span>
+              <span class="sidebar__stats-sub">Повышенная функциональность</span>
+            </div>
+            <div class="sidebar__stats-wrapper">
+              <span class="sidebar__stats-main">894</span>
+              <span class="sidebar__stats-sub-main">литра</span>
+              <span class="sidebar__stats-sub">Объем грузового пространства</span>
             </div>
           </section>
           <section class="hero__testdrive">
-            <a href="#" class="hero__testdrive-text">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="hero__testdrive-ico" d="M11 0C4.95819 0 0 4.95819 0 11C0 17.0418 4.95819 22 11 22C17.0418 22 22 17.0418 22 11C22 4.95819 17.0418 0 11 0ZM11 19.3789C6.38002 19.3789 2.62109 15.62 2.62109 11C2.62109 6.38002 6.38002 2.62109 11 2.62109C15.62 2.62109 19.3789 6.38002 19.3789 11C19.3789 15.62 15.62 19.3789 11 19.3789Z" fill="black"/>
-            <path class="hero__testdrive-ico" d="M12.2891 9.06641C12.2891 9.77841 11.712 10.3555 11 10.3555C10.288 10.3555 9.71094 9.77841 9.71094 9.06641C9.71094 8.3544 10.288 7.77734 11 7.77734C11.712 7.77734 12.2891 8.3544 12.2891 9.06641Z" fill="black"/>
-            <path class="hero__testdrive-ico" d="M11 11.6446C9.85814 11.6446 8.89873 10.8936 8.56085 9.86356C6.85503 10.0495 5.26434 10.4067 3.91402 10.926C3.91368 10.9509 3.91016 10.975 3.91016 11C3.91016 11.7449 4.02715 12.4627 4.24098 13.1377C5.29573 12.5872 6.32849 12.2891 7.13281 12.2891C7.80571 12.2891 8.32251 12.4793 8.71208 12.8714C9.61275 13.7759 9.71597 15.6118 9.71799 17.9677C10.1344 18.0442 10.5618 18.0899 11 18.0899C11.4384 18.0899 11.8658 18.0442 12.2825 17.9677C12.284 15.6136 12.3867 13.7769 13.2879 12.8714C13.6775 12.4798 14.1936 12.2891 14.8672 12.2891C15.6609 12.2891 16.6959 12.5758 17.7605 13.1335C17.9737 12.4598 18.0898 11.7434 18.0898 11C18.0898 10.9755 18.0863 10.9519 18.0862 10.9275C16.6232 10.3634 15.0045 10.0348 13.4393 9.86322C13.1014 10.8936 12.142 11.6446 11 11.6446Z" fill="black"/>
-            </svg>
-            Тест драйв</a>
-            <button class="hero__testdrive-button">заказать</button>
-          </section>
-        </div>
-    </header>
-    
-    <main class="main container">
-      <h2 class="main__heading">Model S</h2>
-      <aside class="sidebar sidebar--right">
-        <h3 class="sidebar__heading">Будущее вождения</h3>
-        <p class="sidebar__text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую с студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
-        <section class="sidebar__stats">
-          <div class="sidebar__stats-wrapper">
-            <span class="sidebar__stats-main">17</span>
-            <span class="sidebar__stats-sub-main"></span>дюймов</span>
-            <span class="sidebar__stats-sub">Большой дисплей</span>
-          </div>
-          <div class="sidebar__stats-wrapper">
-            <span class="sidebar__stats-sub-main">Беспроводное обновление ПО</span>
-            <span class="sidebar__stats-sub">Повышенная функциональность</span>
-          </div>
-          <div class="sidebar__stats-wrapper">
-            <span class="sidebar__stats-main">894</span>
-            <span class="sidebar__stats-sub-main">литра</span>
-            <span class="sidebar__stats-sub">Объем грузового пространства</span>
-          </div>
-        </section>
-        <section class="hero__testdrive">
             <a href="#" class="hero__testdrive-text hero__testdrive-text-aside">
               <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-              <circle class="circle" cx="11" cy="11" r="10" stroke="white" stroke-width="2"/>
-              <path class="hero__testdrive-ico-aside" d="M10.9949 8.031C11.7489 8.031 12.2559 7.537 12.2559 6.861C12.2559 6.237 11.7489 5.769 10.9949 5.769C10.2409 5.769 9.73392 6.263 9.73392 6.9C9.73392 7.537 10.2409 8.031 10.9949 8.031ZM9.98092 16H12.0089V9.006H9.98092V16Z" fill="white"/>
+                <circle class="circle" cx="11" cy="11" r="10" stroke="white" stroke-width="2"/>
+                <path class="hero__testdrive-ico-aside" d="M10.9949 8.031C11.7489 8.031 12.2559 7.537 12.2559 6.861C12.2559 6.237 11.7489 5.769 10.9949 5.769C10.2409 5.769 9.73392 6.263 9.73392 6.9C9.73392 7.537 10.2409 8.031 10.9949 8.031ZM9.98092 16H12.0089V9.006H9.98092V16Z" fill="white"/>
               </svg>
-            Узнать больше</a>
+              Узнать больше
+            </a>
             <button class="hero__testdrive-button testdrive-button-aside">заказать</button>
           </section>
-      </aside>
-      <aside class="sidebar sidebar--left">
-        <h3 class="sidebar__heading">Самый безопасный автомобиль в мире</h3>
-        <p class="sidebar__text">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.</p>
-        <h3 class="sidebar__heading sidebar__heading-no">Оценка защиты: </h3>
-        <div class="sidebar__rating">
-          <div class="sidebar__rating-category">
-            <span class="sidebar__rating-text">спереди</span>
-            <span class="sidebar__rating-stars"></span>
-          </div>
-          <div class="sidebar__rating-category">
-            <span class="sidebar__rating-text">сбоку</span>
-            <span class="sidebar__rating-stars"></span>
-          </div>
-          <div class="sidebar__rating-category">
-            <span class="sidebar__rating-text">сбоку<span class="sidebar__rating-text-add">(стойка)</span></span>
-            <span class="sidebar__rating-stars"></span>
-          </div>
-          <div class="sidebar__rating-category">
-            <span class="sidebar__rating-text">водитель</span>
-            <span class="sidebar__rating-stars"></span>
-          </div>
-          <div class="sidebar__rating-category">
-            <span class="sidebar__rating-text">пассажир</span>
-            <span class="sidebar__rating-stars"></span>
+        </aside>
+      </section>
+      <secton class="rate">
+        <div class="rate__image">
+          <div class="rate__image-wrap">
+            <div class="rate__image-watermark-wr">
+              <img class="rate__image-watermark" src="./img/tesla-model-s.png" width="793" height="151">
+            </div>
+            <div class="rate__image-frame-wr">
+              <img class="rate__image-frame" src="./img/tesla-frame.png" width="1049" height="540">
+            </div>
           </div>
         </div>
-        <div class="sidebar__stats-wrapper">
+        <aside class="sidebar sidebar--left">
+          <h3 class="sidebar__heading">Самый безопасный автомобиль в мире</h3>
+          <p class="sidebar__text">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.</p>
+          <h3 class="sidebar__heading sidebar__heading-no">Оценка защиты: </h3>
+          <div class="sidebar__rating">
+            <div class="sidebar__rating-category">
+              <span class="sidebar__rating-text">спереди</span>
+              <span class="sidebar__rating-stars"></span>
+            </div>
+            <div class="sidebar__rating-category">
+              <span class="sidebar__rating-text">сбоку</span>
+              <span class="sidebar__rating-stars"></span>
+            </div>
+            <div class="sidebar__rating-category">
+              <span class="sidebar__rating-text">сбоку<span class="sidebar__rating-text-add">(стойка)</span></span>
+              <span class="sidebar__rating-stars"></span>
+            </div>
+            <div class="sidebar__rating-category">
+              <span class="sidebar__rating-text">водитель</span>
+              <span class="sidebar__rating-stars"></span>
+            </div>
+            <div class="sidebar__rating-category">
+              <span class="sidebar__rating-text">пассажир</span>
+              <span class="sidebar__rating-stars"></span>
+            </div>
+          </div>
+          <div class="sidebar__stats-wrapper">
             <span class="sidebar__stats-main">5 звезд</span>
             <span class="sidebar__stats-sub">безопасности</span>
           </div>
-        <section class="hero__testdrive">
+          <section class="hero__testdrive">
             <a href="#" class="hero__testdrive-text hero__testdrive-text-aside">
               <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-              <circle class="circle" cx="11" cy="11" r="10" stroke="white" stroke-width="2"/>
-              <path class="hero__testdrive-ico-aside" d="M10.9949 8.031C11.7489 8.031 12.2559 7.537 12.2559 6.861C12.2559 6.237 11.7489 5.769 10.9949 5.769C10.2409 5.769 9.73392 6.263 9.73392 6.9C9.73392 7.537 10.2409 8.031 10.9949 8.031ZM9.98092 16H12.0089V9.006H9.98092V16Z" fill="white"/>
+                <circle class="circle" cx="11" cy="11" r="10" stroke="white" stroke-width="2"/>
+                <path class="hero__testdrive-ico-aside" d="M10.9949 8.031C11.7489 8.031 12.2559 7.537 12.2559 6.861C12.2559 6.237 11.7489 5.769 10.9949 5.769C10.2409 5.769 9.73392 6.263 9.73392 6.9C9.73392 7.537 10.2409 8.031 10.9949 8.031ZM9.98092 16H12.0089V9.006H9.98092V16Z" fill="white"/>
               </svg>
-            Узнать больше</a>
+              Узнать больше
+            </a>
             <button class="hero__testdrive-button testdrive-button-aside">заказать</button>
           </section>
-      </aside>
-      <section class="img-dscr">
-          <p class="img-dscr-p img-descr-top">Защита от удара  сбоку</p>
-          <p class="img-dscr-p img-descr-middle">Защита от удара спереди</p>
-          <p class="img-dscr-p img-descr-bottom">Минимальный риск перевернуться в аварии</p>
-        </section>
-    </main> 
-
+        </aside>
+      </secton>
+    </main>
   </body>
 </html>
