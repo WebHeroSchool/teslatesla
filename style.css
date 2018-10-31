@@ -726,6 +726,6 @@ aside .hero__testdrive {
     padding-bottom: 43px;
   }
   .img-dscr {
-    display: block;
+    display: none;
   }
 }
