@@ -651,8 +651,8 @@ aside .hero__testdrive {
     margin-top: 294px;
   }
   .main {
-  background-position: 2% 72%, 100% 63%, 0% 8%;
-  background-size: contain, contain, contain;
+    background-position: 2% 72%, 100% 63%, 0% 8%;
+    background-size: contain, contain, contain;
   }
   .img-dscr {
     width: 100%;
@@ -662,6 +662,12 @@ aside .hero__testdrive {
 @media (max-width: 720px) {
   .hero__text-wrapper {
     width: 303px;
+  }
+}
+
+@media (max-width: 1390px) {
+  .main .sidebar--left {
+    z-index: 0;
   }
 }
 
