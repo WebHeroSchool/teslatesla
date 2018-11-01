@@ -300,7 +300,6 @@ img {
 
 .sidebar--left {
   align-self: flex-start;
-  z-index: -1;
   flex-shrink: 0;
 }
 
@@ -387,12 +386,12 @@ img {
   color: red;
 }
 
-.hero__testdrive-text-aside {
+.hero__testdrive-text--aside {
   width: 150px;
   color: white;
 }
 
-.hero__testdrive-text-aside:hover {
+.hero__testdrive-text--aside:hover {
   color: white;
 }
 
@@ -404,11 +403,11 @@ img {
   fill: #E51937;
 }
 
-.hero__testdrive-text-aside:hover .hero__testdrive-ico-aside {
+.hero__testdrive-text--aside:hover .hero__testdrive-ico-aside {
   fill: #E51937;
 }
 
-.hero__testdrive-text-aside:hover .circle {
+.hero__testdrive-text--aside:hover .circle {
   fill: white;
 }
 
@@ -584,7 +583,7 @@ aside .hero__testdrive {
   .sidebar__stats-wrapper {
     display: none;
   }
-  .sidebar__heading-no {
+  .sidebar__heading--no {
     display: none;
   }
   .sidebar--left {
