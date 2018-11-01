@@ -3,7 +3,9 @@ html {
   font-size: 10px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -13,6 +15,11 @@ body {
   font-weight: 600;
   padding: 0;
   margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -30,7 +37,7 @@ body {
 }
 
 .header__model {
-  margin-left: 55px;
+  margin-left: 58px;
 }
 
 .header__logo-img {
@@ -104,23 +111,18 @@ body {
 }
 
 .header__user-link {
-  margin-right: 30px;
+  margin-right: 26px;
 }
 
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  background-image: url("./img/tesla-watermark.png");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .hero__heading {
   margin: 0;
   padding: 0;
-
   font-size: 90px;
   line-height: 110px;
   font-weight: 600;
@@ -131,11 +133,10 @@ body {
   margin-top: -9px;
   margin-bottom: 27px;
   padding: 0;
-
   font-size: 15px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.01em;
 }
 
 .hero__image {
@@ -150,7 +151,6 @@ body {
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: space-between;
-
   padding-bottom: 56px;
   background-image: url("./img/arrow-down.svg");
   background-repeat: no-repeat;
@@ -162,7 +162,7 @@ body {
 .hero__stats {
   display: flex;
   justify-content: space-between;
-  width: 373px;
+  width: 385px;
 }
 
 .hero__testdrive {
@@ -174,9 +174,8 @@ body {
 }
 
 .hero__stats-speed-wrapper {
-  width: 154px;
+  width: 160px;
   padding-left: 59px;
-
   background-image: url("./img/ico-speed.svg");
   background-repeat: no-repeat;
   background-size: 46px 35px;
@@ -184,9 +183,8 @@ body {
 }
 
 .hero__stats-km-wrapper {
-  width: 140px;
+  width: 150px;
   padding-left: 42px;
-
   background-image: url("./img/ico-way.svg");
   background-repeat: no-repeat;
   background-size: 31px 50px;
@@ -214,6 +212,8 @@ body {
 
 .hero__testdrive-text {
   width: 118px;
+  padding-top: 5px;
+  letter-spacing: 0.01em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -221,6 +221,17 @@ body {
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.hero__testdrive-text:hover,
+.hero__testdrive-text:active {
+  color: #E51937;
+}
+
+.hero__testdrive-text:hover .hero__testdrive-ico {
+  fill: #E51937;
 }
 
 .hero__testdrive-button {
@@ -237,6 +248,292 @@ body {
   border: 2px solid #E51937;
 }
 
+.hero__testdrive-button:hover {
+  color: white;
+  background-color: #E51937;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.sidebar {
+  width: 440px;
+  min-height: 900px;
+  background-color: #E51937;
+  color: white;
+  padding-top: 51px;
+}
+
+.main__heading,
+.sidebar__heading {
+  margin: 0;
+  padding: 0;
+}
+
+.main__heading {
+  font-size: 70px;
+  line-height: 85px;
+  font-weight: 600;
+  color: #E51937;
+  position: absolute;
+  top: 97px;
+  left: 80px;
+}
+
+.sidebar__heading {
+  margin-left: 52px;
+  margin-right: 72px;
+  margin-bottom: 11px;
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 600;
+}
+
+.sidebar--right {
+  align-self: flex-end;
+  flex-shrink: 0;
+}
+
+.sidebar--left {
+  align-self: flex-start;
+  flex-shrink: 0;
+}
+
+.sidebar__text {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin: 0;
+  margin-bottom: 62px;
+  padding: 0;
+  margin-left: 52px;
+  margin-right: 72px;
+}
+
+.sidebar__stats-main {
+  font-size: 35px;
+  line-height: 43px;
+  font-weight: 600;
+}
+
+.sidebar__stats-sub-main {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.sidebar__stats-sub {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+}
+
+.sidebar__stats {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-bottom: 162px;
+}
+
+.sidebar__stats-wrapper {
+  padding-left: 62px;
+  background-repeat: no-repeat;
+}
+
+.sidebar__stats-wrapper:first-child {
+  width: 187px;
+  height: 65px;
+  margin-bottom: 35px;
+  background-image: url("./img/ico-screen.svg");
+  background-size: 36px 53px;
+  background-position: left bottom;
+}
+
+.sidebar__stats-wrapper:nth-child(2) {
+  width: 269px;
+  height: 71px;
+  margin-bottom: 25px;
+  background-image: url("./img/ico-wifi.svg");
+  background-size: 44px 34px;
+  background-position: 0px 17px;
+}
+
+.sidebar__stats-wrapper:last-child {
+  width: 202px;
+  height: 71px;
+  background-image: url(./img/ico-bag.svg);
+  background-size: 36px 52px;
+  background-position: 3px 13px;
+}
+
+.sidebar__stats-sub {
+  display: block;
+}
+
+.testdrive-button-aside {
+  color: white;
+  border-color: white;
+  background-color: #E51937;
+}
+
+.testdrive-button-aside:hover {
+  background-color: white;
+  color: red;
+}
+
+.hero__testdrive-text--aside {
+  width: 150px;
+  color: white;
+}
+
+.hero__testdrive-text--aside:hover {
+  color: white;
+}
+
+.hero__testdrive-ico-aside {
+  background-color: white;
+}
+
+.circle {
+  fill: #E51937;
+}
+
+.hero__testdrive-text--aside:hover .hero__testdrive-ico-aside {
+  fill: #E51937;
+}
+
+.hero__testdrive-text--aside:hover .circle {
+  fill: white;
+}
+
+aside .hero__testdrive {
+  width: 347px;
+  margin: 0 auto;
+}
+
+.sidebar--left .sidebar__heading,
+.sidebar--left .sidebar__text {
+  margin-left: 56px;
+  margin-right: 68px;
+}
+
+.sidebar--left .sidebar__text {
+  margin-bottom: 40px;
+}
+
+.sidebar__rating {
+  padding-left: 58px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 84px;
+}
+
+.sidebar__rating-text {
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sidebar__rating-text-add {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sidebar__rating-stars {
+  display: inline-block;
+  width: 135px;
+  height: 25px;
+  background-image: url("./img/ico-star.svg");
+  background-size: 28px 25px;
+  background-repeat: repeat-x;
+}
+
+.sidebar__rating-category {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  width: 285px;
+  align-items: center;
+}
+
+.sidebar--left .sidebar__stats-main {
+  font-size: 50px;
+}
+
+.sidebar--left .sidebar__stats-sub {
+  font-size: 27px;
+  line-height: 27px;
+  font-weight: 700;
+}
+
+.sidebar--left .sidebar__stats-wrapper {
+  padding-left: 84px;
+  padding-top: 14px;
+  margin-bottom: 46px;
+  width: 280px;
+  height: 92px;
+  background-image: url("./img/ico-safety.svg");
+  background-size: 62px 74px;
+  background-position: 3px 13px;
+  margin-left: 66px;
+}
+
+.sidebar--left .hero__testdrive {
+  margin-left: 38px;
+}
+
+.spec {
+  margin-top: 32px;
+}
+
+.spec,
+.rate {
+  display: flex;
+}
+
+.rate {
+  align-items: center;
+}
+
+.spec__image-wrap,
+.rate__image-wrap {
+  width: 100%;
+}
+
+.rate__image-wrap {
+  position: relative;
+}
+
+.rate__image {
+  order: 1;
+}
+
+.rate__image-watermark-wr {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  z-index: -1;
+}
+
+.rate__image-frame-wr {
+  margin-left: -100px;
+}
+
+.spec__image-wrap {
+  background-image: url("./img/tesla-inside.png");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
+
 @media (max-width: 1439px) {
   .header__user-btn {
     margin-right: 14px;
@@ -244,11 +541,67 @@ body {
 }
 
 @media (max-width: 960px) {
+  .spec,
+  .rate {
+    flex-direction: column;
+  }
+  .rate__image-watermark-wr {
+    left: 0;
+  }
+  .rate__image-frame-wr {
+    margin-left: 0;
+  }
+  .rate__image {
+    order: 0;
+  }
+  .spec__image-wrap {
+    height: 340px;
+    background-size: cover;
+    background-position: 0% 0%;
+  }
   .header__model {
     display: none;
   }
   .header__user-link {
     display: none;
+  }
+  .main__heading {
+    display: none;
+  }
+  .sidebar__stats {
+    display: none;
+  }
+  aside .hero__testdrive {
+    display: none;
+  }
+  .sidebar {
+    min-height: 304px;
+  }
+  .sidebar__rating {
+    display: none;
+  }
+  .sidebar__stats-wrapper {
+    display: none;
+  }
+  .sidebar__heading--no {
+    display: none;
+  }
+  .sidebar--left {
+    z-index: 1;
+    width: 100%;
+  }
+  .sidebar--right {
+    width: 100%;
+  }
+  .sidebar__heading,
+  .sidebar__text {
+    margin-left: 30px;
+    margin-right: 54px;
+  }
+  .sidebar--left .sidebar__heading,
+  .sidebar--left .sidebar__text {
+    margin-left: 30px;
+    margin-right: 5px;
   }
 }
 
@@ -313,4 +666,3 @@ body {
     padding-bottom: 43px;
   }
 }
-
